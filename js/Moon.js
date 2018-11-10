@@ -27,7 +27,7 @@ class Moon{
         *****************/
 
         // Set the style
-        fill(150, 30, 30);
+        fill(245, 243, 206);
         stroke(0);
 
         // Draw the ellipse

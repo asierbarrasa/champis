@@ -52,5 +52,7 @@ function windowResized() {
 	// Recalculate the moon center
 	moon.pos.x = width/2;
 	moon.pos.y = height/2;
+
+	moon.rad = max(min(150, min(width/2 - 20, height/2 - 20)), 50);
 }
 
