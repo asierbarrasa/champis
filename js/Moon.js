@@ -1,4 +1,13 @@
 class Moon{
+
+    /**
+     * Constructor for the Moon object
+     *
+     * @param x: X coordinate of the moon center
+     * @param y: Y coordinate of the moon center
+     * @param rad: Radius of the moon
+     * @param det: number of points of the shape
+     */
     constructor(x, y, rad, det = 100){
         this.pos = createVector(x, y);
         this.rad = rad;
@@ -6,6 +15,11 @@ class Moon{
         this.phase = 0.0;
     }
 
+    /**
+     * Function to draw the moon and his shadow
+     *
+     * @param p: value between 0.0 and 2.0 that describes the actual phase of the moon
+     */
     draw(p){
 
         /****************
