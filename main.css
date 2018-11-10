@@ -12,14 +12,12 @@ body {
     justify-content: center;
     align-content: center;
     letter-spacing: 10px;
-
-
-   
+    /* border: 2px solid white; */
 }
 
 .blk {
   /* border: 2px solid white; */
-    margin-top: 2%;
+  
     margin-right: 2%;
     margin-left: 2%;
     /* color: #f0f3bd; */
@@ -33,13 +31,19 @@ body {
 }
 
 
-/* .big{
-    width: 18%;
-}
 
-.small{
- width: 9%;
-} */
+
+@media only screen and (min-width: 600px) {
+
+        .big{
+            width: 18%;
+        }
+        
+        .small{
+         width: 9%;
+        }
+    
+}
 
 
 
