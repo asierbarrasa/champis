@@ -18,17 +18,30 @@ body {
 }
 
 .blk {
-  
-    padding: 2%;
+  /* border: 2px solid white; */
+    margin-top: 2%;
+    margin-right: 4%;
+    margin-left: 4%;
     /* color: #f0f3bd; */
     color: whitesmoke;
     /* text-align: center; */
     font-size: 7vmax;
-text-align: center;
+    text-align: center;
 
     display: inline-block;
     text-shadow: 2px 1px black;
 }
+
+
+.big{
+    width: 18%;
+}
+
+.small{
+ width: 9%;
+}
+
+
 
 #moonAnimation{
     position: absolute;
