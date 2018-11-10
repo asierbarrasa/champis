@@ -12,11 +12,11 @@ body {
     justify-content: center;
     align-content: center;
     letter-spacing: 10px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
 }
 
 .blk {
-  border: 2px solid white;
+  /* border: 2px solid white; */
   
     margin-right: 2%;
     margin-left: 2%;
