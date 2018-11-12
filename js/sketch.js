@@ -42,17 +42,26 @@ function draw() {
 
 // Function to be called on window resized
 function windowResized() {
+
+    //Sore previous canvas size
+    let pWidth = width;
+    let pHeight = height;
+
     // Resize the canvas
 	resizeCanvas(document.getElementById('moonAnimation').offsetWidth - 10,
     				document.getElementById('moonAnimation').offsetHeight - 10);
 
-	// Regenerate the stars array
-	stars = generateStarsBlueNoise(starNumber, width, height);
+	// Recalculate stars position
+	for(let i = 0; i < stars.length; i++){
+	    stars[i].x = stars[i].x * width/pWidth;
+        stars[i].y = stars[i].y * height/pHeight;
+    }
 
 	// Recalculate the moon center
 	moon.pos.x = width/2;
 	moon.pos.y = height/2;
 
+	// Recalculate moon radius
 	moon.rad = max(min(150, min(width/2 - 20, height/2 - 20)), 50);
 }
 
